@@ -4,7 +4,7 @@ from math import *
 #------------------------------------
 # battle system
 class human:
-  def __init__(perk):
+  def __init__(self,perk):
     self.hp = 0
     self.bleed = 0
     self.ableed = 0
@@ -17,3 +17,18 @@ class human:
     self.gundmg = 0
     self.meleedmgh = 10
     self.meleedmgl = 5
+    if perk == "exe":
+      self.hp = 130
+      self.meleedmgh = 14
+      self.meleedmgl = 7
+    elif perk == "art":
+      self.hp = 90
+      self.meleedmgh = 8
+      self.meleedmgl = 4
+      self.deadeye = 0
+    elif perk == "laz":
+      self.hp = 110
+      self.laz = 0
+  def effect(self,id,len):
+    if id = 1:
+    
